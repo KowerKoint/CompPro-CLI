@@ -1,0 +1,11 @@
+*
+!/.gitignore
+!/.gitmodules
+!/compile_flags.txt
+!/library/
+!/LICENSE
+!/oj-download.py
+!/requirements.txt
+!/template/
+!/commands.vim
+!/oj-test.sh
