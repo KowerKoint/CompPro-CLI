@@ -1,11 +1,12 @@
-*
+/*
 !/.gitignore
 !/.gitmodules
 !/compile_flags.txt
-!/library/
+!/library
+!/ac-library
 !/LICENSE
 !/oj-download.py
 !/requirements.txt
-!/template/
+!/template
 !/commands.vim
 !/oj-test.sh
