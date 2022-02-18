@@ -1,12 +1,3 @@
-/*
-!/.gitignore
-!/.gitmodules
-!/compile_flags.txt
-!/library
-!/ac-library
-!/LICENSE
-!/oj-download.py
-!/requirements.txt
-!/template
-!/commands.vim
-!/oj-test.sh
+/Contests
+.DS_Store
+geckodriver.log

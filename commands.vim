@@ -1,12 +1,10 @@
 function! OJD(url) abort
+  execute "Deol zsh oj-download.sh " . a:url
   if fnamemodify(a:url, ":h:t") == "contests"
-    execute "!rm -rf " . fnamemodify(a:url, ":t") . "_*/"
-    let @a = fnamemodify(a:url, ":t") . "_*/main.cpp"
+    let @a = "Contests/" . fnamemodify(a:url, ":t") . "_*/main.cpp"
   else
-    execute "!rm -rf " . fnamemodify(a:url, ":t") . "/"
-    let @a = fnamemodify(a:url, ":t") . "/main.cpp"
+    let @a = "Contests/" . fnamemodify(a:url, ":t") . "/main.cpp"
   endif
-  execute "Deol python3 oj-download.py " . a:url
 endfunction
 command! -nargs=1 OJD call OJD(<f-args>)
 
