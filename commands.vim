@@ -3,7 +3,7 @@ function! OJD(url) abort
   if fnamemodify(a:url, ":h:t") == "contests"
     let @a = "Contests/AtCoder_" . fnamemodify(a:url, ":t") . "/*/main.cpp"
   else
-    let @a = "Contests/AtCoder_" . fnamemodify(a:url, ":h:h:t") . "/" fnamemodify(a:url, ":t") . "/main.cpp"
+    let @a = "Contests/AtCoder_" . fnamemodify(a:url, ":h:h:t") . "/" . fnamemodify(a:url, ":t") . "/main.cpp"
   endif
 endfunction
 command! -nargs=1 OJD call OJD(<f-args>)

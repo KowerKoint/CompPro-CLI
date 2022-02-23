@@ -4,7 +4,7 @@ set -eux
 
 if [ "$(basename $(dirname $1))" = "contests" ]; then
   contest_name=$(basename $1)
-  rm -rf Contests/${contest_name} || true
+  rm -rf Contests/AtCoder_${contest_name} || true
 else
   contest_name=$(basename $(dirname $(dirname $1)))
   problem_name=$(basename $1)
