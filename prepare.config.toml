@@ -1,2 +1,2 @@
-problem_directory = "Contests/{problem_id}"
+problem_directory = "Contests/{service_name}_{contest_id}/{problem_id}"
 contest_directory = "."

@@ -2,19 +2,21 @@
 
 set -eux
 
-directory_name="Contests/$(basename $1)"
 if [ "$(basename $(dirname $1))" = "contests" ]; then
-  rm -rf ${directory_name}_* || true
+  contest_name=$(basename $1)
+  rm -rf Contests/${contest_name} || true
 else
-  rm -rf ${directory_name} || true
+  contest_name=$(basename $(dirname $(dirname $1)))
+  problem_name=$(basename $1)
+  rm -rf Contests/AtCoder_${contest_name}/${problem_name} || true
 fi
 
 oj-prepare --config-file ./prepare.config.toml $1
 
 if [ "$(basename $(dirname $1))" = "contests" ]; then
-  for dir in ${directory_name}_*; do
+  for dir in Contests/AtCoder_${contest_name}/*; do
     cp ./template/template.cpp $dir/main.cpp
   done
 else
-  cp ./template/template.cpp $directory_name/main.cpp
+  cp ./template/template.cpp Contests/AtCoder_${contest_name}/${problem_name}/main.cpp
 fi
