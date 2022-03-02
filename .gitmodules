@@ -7,3 +7,6 @@
 [submodule "ac-library"]
 	path = ac-library
 	url = https://github.com/atcoder/ac-library.git
+[submodule "library/KowerKoint"]
+	path = library/KowerKoint
+	url = https://github.com/KowerKoint/library.git

@@ -3,7 +3,7 @@
 /* #include <atcoder/all> */
 /* using namespace atcoder; */
 
-#include "me/template.cpp"
+#include "KowerKoint/template.cpp"
 
 void solve(){
 }
