@@ -17,7 +17,7 @@
   - WSLではダウンロード中にスタックすることがあり、再度コマンドを実行してもフォルダが存在しているためエラーで止まる
 - VSCode以外で同様のタスクを行おうと思ったときに簡単に設定しづらい
 
-以上を踏まえ、[oj](https://github.com/online-judge-tools/oj)や[template-generator](https://github.com/online-judge-tools/template-generator)の完成形のシェルコマンドを使用し、シェルベースで操作を行うことで拡張をしやすくした。
-特にVimへの対応を新たに行った。
+以上を踏まえ、[oj](https://github.com/online-judge-tools/oj)や[template-generator](https://github.com/online-judge-tools/template-generator)の完成形のシェルコマンドを使用し、シェルベースで操作を行うことで拡張をしやすくしました。
+特にVimへの対応を新たに行いました。
 
 **要件・使用方法については後日追記予定**
