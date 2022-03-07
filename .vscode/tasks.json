@@ -1,0 +1,99 @@
+{
+    "version": "2.0.0",
+    "command": "/bin/bash",
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+    },
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "zsh oj-test.sh build ${file}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "clear": true
+            },
+        },
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "zsh oj-test.sh test ${file}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "clear": true
+            },
+        },
+        {
+            "label": "Submit",
+            "type": "shell",
+            "command": "zsh oj-test.sh submit ${file}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "clear": true
+            },
+        },
+        {
+            "label": "Force-submit",
+            "type": "shell",
+            "command": "zsh oj-test.sh force-submit ${file}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "clear": true
+            },
+        },
+        {
+            "label": "Download",
+            "type": "shell",
+            "command": "zsh oj-download.sh ${input:ContestOrProblemURL}",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "clear": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "ContestOrProblemURL",
+            "description": "input contest or problem url",
+            "type": "promptString"
+        }
+    ]
+}
