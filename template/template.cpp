@@ -1,9 +1,8 @@
-/* #define aclmodint */
-/* #define aclsegtree */
+#include "KowerKoint/base.hpp"
+
 /* #include <atcoder/all> */
 /* using namespace atcoder; */
-
-#include "KowerKoint/template.cpp"
+/* #include "KowerKoint/expansion/ac-library/all" */
 
 void solve(){
 }
