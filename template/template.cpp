@@ -2,7 +2,7 @@
 
 /* #include <atcoder/all> */
 /* using namespace atcoder; */
-/* #include "KowerKoint/expansion/ac-library/all" */
+/* #include "KowerKoint/expansion/ac-library/all.hpp" */
 
 void solve(){
 }
