@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-set -eux
+set -ux
 
 if [ "$(basename $(dirname $1))" = "contests" ]; then
   contest_name=$(basename $1)
