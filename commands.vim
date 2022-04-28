@@ -8,6 +8,14 @@ function! OJD(url) abort
 endfunction
 command! -nargs=1 OJD call OJD(<f-args>)
 
+function! CreateSolution(dirpath) abort
+  call system('mkdir ' . a:dirpath)
+  call system('cp template/template.cpp ' . a:dirpath . "/main.cpp")
+  let @a = a:dirpath . "/main.cpp"
+endfunction
+command! -nargs=1 CreateSolution call CreateSolution(<f-args>)
+  
+
 nnoremap <expr> <Leader>o ":<C-u>argadd " . @a
 nnoremap <Leader>d :<C-u>OJD 
 nnoremap <expr> <Leader>b ":<C-u>Deol -split=float zsh oj-test.sh build " . expand("%")
@@ -16,5 +24,6 @@ nnoremap <expr> <Leader>s ":<C-u>Deol -split=float zsh oj-test.sh submit " . exp
 nnoremap <expr> <Leader>f ":<C-u>Deol -split=float zsh oj-test.sh force-submit " . expand("%")
 nnoremap <expr> <Leader>r ":<C-u>Deol -split=float " . expand("%:r")
 nnoremap <expr> <Leader>e ":<C-u>e " . expand("%:r") . "_expanded.cpp"
+nnoremap <expr> <Leader>c ":<C-u>CreateSolution "
 nnoremap <Leader>n :<C-u>next<CR>
 nnoremap <Leader>p :<C-u>prev<CR>
