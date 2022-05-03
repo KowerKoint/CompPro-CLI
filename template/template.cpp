@@ -1,4 +1,4 @@
-#include "KowerKoint/base.hpp"
+#include "KowerKoint/general.hpp"
 
 /* #include <atcoder/all> */
 /* using namespace atcoder; */
