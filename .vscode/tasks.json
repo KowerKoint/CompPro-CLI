@@ -13,7 +13,7 @@
             "command": "zsh oj-test.sh build ${file}",
             "problemMatcher": [],
             "group": {
-                "kind": "test",
+                "kind": "build",
                 "isDefault": true
             },
             "options": {
