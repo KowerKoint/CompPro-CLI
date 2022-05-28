@@ -23,6 +23,7 @@ nnoremap <expr> <Leader>t ":<C-u>Deol -split=float zsh oj-test.sh test " . expan
 nnoremap <expr> <Leader>s ":<C-u>Deol -split=float zsh oj-test.sh submit " . expand("%")
 nnoremap <expr> <Leader>f ":<C-u>Deol -split=float zsh oj-test.sh force-submit " . expand("%")
 nnoremap <expr> <Leader>r ":<C-u>Deol -split=float " . expand("%:r")
+nnoremap <expr> <Leader>g ":<C-u>Deol -split=float gdb " . expand("%:r")
 nnoremap <expr> <Leader>e ":<C-u>e " . expand("%:r") . "_expanded.cpp"
 nnoremap <expr> <Leader>c ":<C-u>CreateSolution "
 nnoremap <Leader>n :<C-u>next<CR>
