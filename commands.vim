@@ -26,5 +26,5 @@ nnoremap <expr> <Leader>r ":<C-u>Deol -split=float " . expand("%:r")
 nnoremap <expr> <Leader>g ":<C-u>Deol -split=float gdb " . expand("%:r")
 nnoremap <expr> <Leader>e ":<C-u>e " . expand("%:r") . "_expanded.cpp"
 nnoremap <expr> <Leader>c ":<C-u>CreateSolution "
-nnoremap <Leader>n :<C-u>next<CR>
-nnoremap <Leader>p :<C-u>prev<CR>
+nnoremap <Leader>] :<C-u>next<CR>
+nnoremap <Leader>[ :<C-u>prev<CR>
