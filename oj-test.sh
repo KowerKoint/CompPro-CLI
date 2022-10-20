@@ -5,7 +5,7 @@ set -eux
 dir="$(dirname $2)"
 base="$(basename $2 .cpp)"
 
-if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+if [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
     g++ -g -ftrapv -fsanitize=undefined -fsanitize=address -Wall $dir/$base.cpp -o $dir/$base -I . -I ./library -I ./ac-library -D DEBUG -std=gnu++17 -O2
 else
     g++ -g -ftrapv -Wall $dir/$base.cpp -o $dir/$base -I . -I ./library -I ./ac-library -D DEBUG -std=gnu++17 -O2
