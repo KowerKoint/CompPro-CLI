@@ -10,3 +10,6 @@
 [submodule "library/KowerKoint"]
 	path = library/KowerKoint
 	url = https://github.com/KowerKoint/library.git
+[submodule "library/rainbou"]
+	path = library/rainbou
+	url = https://github.com/rainbou-kpr/library
